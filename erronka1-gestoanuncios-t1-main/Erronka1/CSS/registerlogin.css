@@ -1,0 +1,280 @@
+/* Aqui poner el tipo de letra */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Imagenes/fondo.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 420px; /* Establece un ancho máximo si lo deseas */
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    /* background-color: red; */
+    /* border: 2px solid white; */
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    /* color: red; */
+}
+
+.container .cajainput {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.cajainput input {
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    box-sizing: border-box;
+}
+
+.cajainput input::placeholder {
+    color: #fff;
+}
+
+.cajainput i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.container .saioa-hasi-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.saioa-hasi-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.saioa-hasi-link p a:hover {
+    text-decoration: underline;
+}
+
+.info{
+    text-align: center;
+    font-size: 20px;
+}
+
+.info i:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info-pop-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    min-width: 60%;
+    /* max-width: 600px; */
+    min-height: 60%;
+    position: absolute;
+    border-radius: 10px;
+    border: #84b6f4 5px solid;
+    animation: animacionNotiAparece 2s;
+    z-index: 2;
+}
+
+.divbotonX{
+    display: flex;
+    justify-content: center;
+}
+
+.info-pop-up button{
+    background:transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.info-general{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px
+}
+
+.info-general i {
+    font-weight: bold;
+}
+
+.parrafos-erab{
+    padding: 0px 0px 0px 10px;
+    text-align: center;
+}
+
+.parrafos-email{
+    padding: 0px 0px 0px 10px; 
+    text-align: center;
+}
+
+.titulillos{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    text-decoration: underline;
+}
+
+
+.notificacion {
+    position: absolute;
+    top: 30px;
+    /* right: 20px;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 420px;
+    /* opacity: 0.5; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-left: 8px solid red;
+    font-weight: bold;
+    animation: animacionNotiAparece 2s;
+    /* z-index: 999; */
+}
+
+
+.notificacion i{
+    color: red;
+    font-size: 40px;
+    /* background-color: blue; */
+}
+
+.notificacion .notificacion-content {
+    flex-grow: 1; /* Esto permite que el mensaje ocupe el espacio disponible */
+    padding: 10px; /* Puedes ajustar el relleno según sea necesario */
+    text-align: center; /* Alinea el texto en el centro */
+}
+
+.notificacion span{
+    font-size: 15px;
+    text-align: center;
+}
+
+.notificacion button{
+    background:transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@keyframes animacionNotiAparece { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+      margin-left: 0rem;
+    }
+    25% {
+      margin-left: 0.5rem;
+    }
+    75% {
+      margin-left: -0.5rem;
+    }
+    100% {
+      margin-left: 0rem;
+    }
+  }
+
+.inputshake{
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+
+.visible{
+    display: flex;
+}
+
+.oculto{
+    display: none;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del contenido del popup */
+.popup-content {
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del botón Aceptar */
+#btnAceptar {
+    background-color: #84b6f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

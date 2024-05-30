@@ -1,0 +1,90 @@
+*{
+    font-family: 'Young Serif', serif;
+}
+
+header {
+    /* background-color: #7fa4d1; */
+    /* color: #fff; */
+    text-align: center;
+    /* padding: 10px 20px; */
+    /* margin-top: 0; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #557396;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 60px; /* Ajusta el tamaño de la imagen según tu preferencia */
+    height: 70px; /* Ajusta el tamaño de la imagen según tu preferencia */
+}
+
+
+nav a:first-child {
+    margin-left: auto;
+}
+
+nav h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Young Serif', serif;
+}
+
+/* Estilo para el menú desplegable */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+/* Estilo para el botón del menú desplegable */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Estilo para el ícono del menú desplegable (usando Boxicons) */
+.dropbtn i {
+    font-size: 28px;
+    
+}
+
+/* Estilo para el contenido del menú desplegable (las opciones) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    opacity: 1;
+    min-width: 120px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilo para las opciones del menú desplegable */
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    margin-right: 5%;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambia el color de fondo cuando se pasa el ratón por encima de las opciones */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Muestra el menú desplegable cuando se pasa el ratón por encima del botón */
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}

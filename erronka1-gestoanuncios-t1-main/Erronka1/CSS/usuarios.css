@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif', serif;
+    overflow-x: hidden;
+    width: 100; 
+}
+
+.container {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    padding-bottom: 100px;
+
+}
+
+/* Estilos para la tabla de usuarios */
+.tabla {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+table {
+    color: black;
+    background-color: whitesmoke;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    font-size: 18px;
+    background-color: #289dd2;
+    /* Color de fondo del encabezado */
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    /* Fondo alternado para las filas impares */
+}
+
+a.button {
+    text-decoration: none;
+    color: #289dd2;
+    background-color: white;
+    border: 1px solid #289dd2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #289dd2;
+    color: white;
+}
+
+
+/* Estilo del popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 5px solid #84b6f4;
+}
+
+.popupbotones {
+    background-color: #84b6f4;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+

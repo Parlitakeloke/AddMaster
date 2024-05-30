@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+        /* Estilos generales */
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            font-family: 'Young Serif', serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #84b6f4;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #84b6f4;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 60px;
+            /* Ajusta el tamaño de la imagen según tu preferencia */
+            height: 70px;
+            /* Ajusta el tamaño de la imagen según tu preferencia */
+        }
+
+
+        nav a:first-child {
+            margin-left: auto;
+        }
+
+        nav h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #fff;
+            font-family: 'Young Serif', serif;
+        }
+
+        /* Estilo para el menú desplegable */
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Estilo para el botón del menú desplegable */
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        /* Estilo para el ícono del menú desplegable (usando Boxicons) */
+        .dropbtn i {
+            font-size: 28px;
+
+        }
+
+        /* Estilo para el contenido del menú desplegable (las opciones) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            z-index: 1;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+
+        }
+
+        /* Estilo para las opciones del menú desplegable */
+        .dropdown-content a {
+            color: black;
+            padding: 8px 6px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Cambia el color de fondo cuando se pasa el ratón por encima de las opciones */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Muestra el menú desplegable cuando se pasa el ratón por encima del botón */
+        .nav-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .tituloh1 {
+            color: #84b6f4;
+
+        }
+
+        /* Estilos del formulario */
+        .formulario-container {
+            width: 25%;
+            margin-left: 15%;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 5px solid #84b6f4;
+            border-radius: 15px;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .formulario-container form {
+            margin-left: 9%;
+        }
+
+
+
+        .formulario label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .fecha-inputs {
+            display: flex;
+            justify-content: space-between;
+            /* padding-right: 50%; */
+        }
+
+        .fecha-input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .formulario input[type="text"],
+        .formulario textarea {
+            width: 80%;
+            padding: 10px;
+            border: 2px solid #84b6f4;
+            border-radius: 15px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            outline: none;
+            resize: none;
+        }
+
+        .formulario select{
+                width: 80%;
+                border: 2px solid #84b6f4;
+                border-radius: 15px;
+                padding: 10px;
+                font-size: 16px;
+                margin-bottom: 15px;
+                outline: none;
+        
+        
+        }
+
+        .formulario input[type="file"] {
+            width: 80%;
+            border: 2px solid #84b6f4;
+            border-radius: 15px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            outline: none;
+        }
+
+        .bton {
+            display: flex;
+            justify-content: center;
+        }
+
+        .formulario input[type="submit"] {
+            background-color: #84b6f4;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            justify-content: center;
+            border-radius: 15px;
+            align-items: center;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .formulario input[type="submit"]:hover {
+            background-color: #289dd2;
+        }
+
+
+
+        /* Estilos del footer */
+        footer {
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            padding: 0.1rem;
+            margin-top: 10%;
+            background-color: #84b6f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-top: 5px solid #289dd2;
+        }
+
+        .logo_footer {
+            width: auto;
+            height: auto;
+            margin-bottom: 1rem;
+            margin-top: 20px;
+        }
+
+        .footer-menu-container {
+            list-style-type: none;
+            font-size: 20px;
+            color: whitesmoke;
+            font-family: 'Calistoga';
+            display: flex;
+            /* Cambia el contenedor a un flex container */
+            justify-content: center;
+            /* Centra horizontalmente los elementos */
+            align-items: center;
+            /* Centra verticalmente los elementos */
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .footer-menu-container ul:hover {
+            color: #289dd2;
+        }
+
+        .footer-menu-container a {
+            color: whitesmoke;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu-item {
+            margin: 1rem 1.5rem;
+            opacity: 0.6;
+            font-weight: bold;
+            color: #289dd2;
+        }
+
+        .menu-item:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            color: black;
+            opacity: 0.3;
+            text-align: center;
+        }
+    
+    /* Estilo del popup */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        align-items: center;
+    }
+
+    /* Estilo del contenido del popup */
+    .popup-content {
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilo del botón Aceptar */
+    #btnAceptar {
+        background-color: #84b6f4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }

@@ -1,0 +1,78 @@
+
+/* Estilos del footer */
+footer {
+    width: 100%;
+    position: relative; /* Fija el footer en la parte inferior */
+    background-color: #557396;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0; 
+    color: white;
+    margin-top: 11%;
+}
+
+.logo_footer {
+    width: 50px;
+    /* height: auto; */
+    /* margin-bottom: 1rem; */
+    margin-top: 20px;
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 1rem; */
+}
+
+.footer-menu-container {
+    list-style-type: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Calistoga';
+    display: flex; /* Cambia el contenedor a un flex container */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-container ul:hover {
+    color: #289dd2;
+}
+
+.footer-menu-container a {
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+footer ul li a{
+    color: white;
+}
+
+
+.menu-item {
+    margin: 1rem 1.5rem;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #289dd2;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.content{
+    flex: 1 0 auto;
+    padding-bottom: 100px;
+}

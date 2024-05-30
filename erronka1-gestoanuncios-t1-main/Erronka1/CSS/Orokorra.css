@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* Estilos generales */
+*{
+    font-family: 'Young Serif', serif;
+}   
+
+body {
+    background-color: whitesmoke;
+    /* background: url("../Imagenes/fondohasiera.jpg") no-repeat fixed; */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif', serif;
+    overflow-x: hidden;
+    width: 100;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    /* El contenido principal ocupará todo el espacio disponible */
+    padding-bottom: 5%;
+    /* Ajusta el valor según el tamaño de tu pie de página */
+    overflow-y: auto;
+    margin-top: 2%;
+}
+
+.pagination-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagination-item:hover {
+    background-color: #eee;
+}
+
+.pagination-item.active {
+    background-color: #289dd2;
+    color: white;
+}
+
+.page-link {
+    color: black;
+}
+
+.pagination-item:first-child,
+.pagination-item:last-child {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el buscador */
+.buscador {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-busqueda {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #84b6f4;
+    border-radius: 25px;
+    /* Añade bordes redondeados */
+    font-size: 18px;
+    outline: none;
+}
+
+.btn-buscar {
+    padding: 10px 20px;
+    background-color: #84b6f4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    /* Añade bordes redondeados */
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-buscar:hover {
+    background-color: #289dd2;
+}
+
+
+/* Resto de estilos según tu diseño */
+/* Estilos del card container */
+.card__container2 {
+    margin-top: 5%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas:
+        "card1  card2 "
+        "card3  card4 ";
+}
+
+.card__picture {
+    width: 105px;
+    height: 110px;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__item2 {
+    padding: 10px;
+    border-radius: 15px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    /* Agrega una altura máxima a las tarjetas */
+    overflow: visible;
+}
+
+.card__title2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-family: 'Calistoga';
+    color: #289dd2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card__paragraph2 {
+    
+    font-weight: 300px;
+    font-size: 16px;
+    font-family: 'Calistoga';
+    color: black;
+    text-align: center;
+}
+
+.card__paragraph2 p {
+    max-height: 4em;
+    max-height: none;
+    /* Agrega una altura máxima al párrafo */
+    overflow: hidden;
+}
+
+.card__item2:hover .card__paragraph2 p {
+    max-height: none;
+    /* Mostrar todo el texto en el hover */
+}
+
+/* Estilos del footer */
+footer {
+    width: 100%;
+    position: relative; /* Fija el footer en la parte inferior */
+    background-color: #557396;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0; 
+    color: white;
+}
+
+.logo_footer {
+    width: 50px;
+    /* height: auto; */
+    /* margin-bottom: 1rem; */
+    margin-top: 20px;
+}
+
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 1rem; */
+}
+
+.footer-menu-container {
+    list-style-type: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Calistoga';
+    display: flex; /* Cambia el contenedor a un flex container */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-menu-container ul:hover {
+    color: #289dd2;
+}
+
+.footer-menu-container a {
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+footer ul li a{
+    color: white;
+}
+
+
+.menu-item {
+    margin: 1rem 1.5rem;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #289dd2;
+}
+
+.menu-item:hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.content{
+    flex: 1 0 auto;
+    padding-bottom: 100px;
+}
